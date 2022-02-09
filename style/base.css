@@ -3,22 +3,22 @@
 }
 header {
   border: 2px solid black;
-  max-width: 300px;
+  max-width: 400px;
+  margin-top: 50px;
+  margin-left: 100px;
   text-align: center;
   font-size: 25px;
 }
 .box {
   border: 2px solid black;
-  max-width: 300px;
+  margin-left: 100px;
+  max-width: 400px;
+  height: 400px;
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  overflow-y: auto;
 }
-.card {
-  border: 2px solid black;
-  width: 180px;
-  margin: auto;
-}
-button {
-}
+
 footer {
 }

@@ -1,0 +1,15 @@
+.card {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto auto 10px auto;
+  }
+  .tags {
+      display: flex;
+      justify-content: space-around;
+      align-self: flex-end;
+      
+  }
+  button {
+    margin-left: 100px;
+  }
