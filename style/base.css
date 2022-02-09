@@ -19,6 +19,14 @@ header {
   padding-top: 20px;
   overflow-y: auto;
 }
+.content{
+  margin-left: 10px;
+}
 
 footer {
+  border: 2px solid black;
+  max-width: 400px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: 25px;
 }
