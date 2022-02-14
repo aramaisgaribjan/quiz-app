@@ -17,9 +17,9 @@
       <div class="box">
         <form class="createQuestion">
           <label for="addQuestion">Add question:</label>
-          <input type="text" id="addQuestion" name="add question" />
+          <textarea id="addQuestion" rows="4" name="add question"></textarea>
           <label for="addAnswer">Add answer:</label>
-          <input type="text" id="addAnswer" name="add answer" />
+          <textarea id="addAnswer" rows="4" name="add answer"></textarea>
           <label for="addTag">Add tags:</label>
           <input type="text" id="addTag" name="add tags" />
           <input class="buttonSubmit" type="submit" value="Submit" />
@@ -27,9 +27,11 @@
       </div>
     </main>
     <footer>
-      <span class="material-icons"> home </span>
+      <a href="index.html"> <span class="material-icons"> home </span> </a>
       <span class="material-icons"> bookmark_border </span>
-      <span class="material-icons"> note_add </span>
+      <a href="createQuestion.html">
+        <span class="material-icons"> note_add </span>
+      </a>
       <span class="material-icons"> account_circle </span>
     </footer>
   </body>
