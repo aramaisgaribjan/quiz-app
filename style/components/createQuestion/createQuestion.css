@@ -1,0 +1,15 @@
+.createQuestion {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0px auto 20px auto;
+    gap: 0.5rem;
+}
+.buttonSubmit{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+textarea{
+    resize: vertical;
+}

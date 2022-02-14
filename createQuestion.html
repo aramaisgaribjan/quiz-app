@@ -15,13 +15,23 @@
     <main>
       <header class="title">CREATE</header>
       <div class="box">
-        <div class="createQuestion"></div>
+        <form class="createQuestion">
+          <label for="addQuestion">Add question:</label>
+          <textarea id="addQuestion" rows="4" name="add question"></textarea>
+          <label for="addAnswer">Add answer:</label>
+          <textarea id="addAnswer" rows="4" name="add answer"></textarea>
+          <label for="addTag">Add tags:</label>
+          <input type="text" id="addTag" name="add tags" />
+          <input class="buttonSubmit" type="submit" value="Submit" />
+        </form>
       </div>
     </main>
     <footer>
-      <span class="material-icons"> home </span>
+      <a href="index.html"> <span class="material-icons"> home </span> </a>
       <span class="material-icons"> bookmark_border </span>
-      <span class="material-icons"> note_add </span>
+      <a href="createQuestion.html">
+        <span class="material-icons"> note_add </span>
+      </a>
       <span class="material-icons"> account_circle </span>
     </footer>
   </body>
