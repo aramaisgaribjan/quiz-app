@@ -1,13 +1,11 @@
-const btnShowAnswer = document.querySelector(".btnShowAnswer");
-const answerText = document.querySelector(".answer")
+const btnShowAnswer = document.querySelector('.btnShowAnswer');
+const answerText = document.querySelector('.answer');
 
-btnShowAnswer.addEventListener("click", () => {
-    answerText.classList.toggle("answer")
-  });
- 
-  function change() 
-  {
-      var elem = document.getElementById("btnShowAnswer");
-      if (elem.value=="Hide Answer") elem.value = "Show Answer";
-      else elem.value = "Hide Answer";
+btnShowAnswer.addEventListener('click', () => {
+  answerText.classList.toggle('answer');
+  if (btnShowAnswer.textContent === 'Show answer') {
+    btnShowAnswer.textContent = 'Hide answer';
+  } else {
+    btnShowAnswer.textContent = 'Show answer';
   }
+});
