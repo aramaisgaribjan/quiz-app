@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "htmlhint": "npx htmlhint \"**/*.html\"",
-    "stylelint": "npx stylelint \"**/*.css\"",
+    "checkhtml": "npx htmlhint \"**/*.html\"",
+    "checkstyle": "npx stylelint \"**/*.css\"",
     "prettier:check": "npx prettier --check .",
-    "prettier:write": "npx prettier --write ."
+    "prettier:write": "npx prettier --write .",
+    "checkjs": "npx eslint \"**/*.js\""
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "@storybook/addon-links": "^6.4.18",
     "@storybook/html": "^6.4.18",
     "babel-loader": "^8.2.3",
+    "eslint": "^8.9.0",
     "htmlhint": "^1.1.2",
     "prettier": "^2.5.1",
     "stylelint": "^14.5.0",
