@@ -30,7 +30,7 @@ header {
 .bookmark img {
   position: absolute;
   top: -0.9rem;
-  right: 0rem;
+  right: 0; 
   width: 35px;
   height: 35px;
 }
