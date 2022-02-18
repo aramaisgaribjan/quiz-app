@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main>
@@ -17,9 +18,27 @@
       <div class="box">
         <form class="createQuestion">
           <label for="addQuestion">Add question:</label>
-          <textarea id="addQuestion" rows="4" name="add question"></textarea>
+          <textarea
+            name="question-input"
+            id="question-input"
+            placeholder="Enter question..."
+            rows="4"
+            required
+            data-js="question-input-area"
+            maxlength="50"
+          ></textarea>
+          <div><span data-js="input-counter">0/50</span></div>
           <label for="addAnswer">Add answer:</label>
-          <textarea id="addAnswer" rows="4" name="add answer"></textarea>
+          <textarea
+            id="addAnswer"
+            rows="4"
+            name="add answer"
+            placeholder="Enter answer..."
+            required
+            data-js="answer-input-area"
+            maxlength="100"
+          ></textarea>
+          <div><span data-js="input-counter">0/100</span></div>
           <label for="addTag">Add tags:</label>
           <input type="text" id="addTag" name="add tags" />
           <input class="buttonSubmit" type="submit" value="Submit" />
