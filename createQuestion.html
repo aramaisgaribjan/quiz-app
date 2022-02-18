@@ -18,27 +18,31 @@
       <div class="box">
         <form class="createQuestion">
           <label for="addQuestion">Add question:</label>
-          <textarea
-            name="question-input"
-            id="question-input"
-            placeholder="Enter question..."
-            rows="4"
-            required
-            data-js="input-area"
-            maxlength="50"
-          ></textarea>
-          <div><span data-js="input-counter">0/50</span></div>
+          <div data-js="textarea">
+            <textarea
+              name="question-input"
+              id="question-input"
+              placeholder="Enter question..."
+              rows="4"
+              required
+              data-js="input-area"
+              maxlength="50"
+            ></textarea>
+            <div><span data-js="input-counter">0/50</span></div>
+          </div>
           <label for="addAnswer">Add answer:</label>
-          <textarea
-            id="answer-input"
-            rows="4"
-            name="answer-input"
-            placeholder="Enter answer..."
-            required
-            data-js="input-area"
-            maxlength="100"
-          ></textarea>
-          <div><span data-js="input-counter">0/100</span></div>
+          <div data-js="textarea">
+            <textarea
+              id="answer-input"
+              rows="4"
+              name="answer-input"
+              placeholder="Enter answer..."
+              required
+              data-js="input-area"
+              maxlength="100"
+            ></textarea>
+            <div><span data-js="input-counter">0/100</span></div>
+          </div>
           <label for="addTag">Add tags:</label>
           <input type="text" id="addTag" name="add tags" />
           <input class="buttonSubmit" type="submit" value="Submit" />
