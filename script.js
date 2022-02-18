@@ -1,9 +1,45 @@
 /* eslint-disable no-unused-vars */
 const btnShowAnswer = document.querySelector('.btnShowAnswer');
 const answerText = document.querySelector('.answer');
-const questionInput = document.querySelector('[data-js="question-input-area"]');
-const counter = document.querySelector('[data-js="input-counter"]');
-const answerInput = document.querySelector('[data-js="answer-input-area"]');
+const inputs = document.querySelectorAll('[data-js="input-area"]');
+
+
+
+inputs?.forEach(item => {
+  const inputCounter = item.querySelector('[data-js="input-counter"]');
+  item.addEventListener('input', e => {
+    if (item.value.length <= 100) {
+      inputCounter.textContent = e.target.value.length + "/" + 100;
+    // eslint-disable-next-line no-empty
+    } else {
+    }
+  });
+})              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 btnShowAnswer?.addEventListener('click', () => {
   answerText.classList.toggle('answer');
@@ -14,20 +50,29 @@ btnShowAnswer?.addEventListener('click', () => {
   }
 });
 
-questionInput?.addEventListener("input", () => {
+
+
+
+
+
+
+
+
+/*questionInput?.addEventListener("input", () => {
   if (questionInput.value.length <= 50) {
-    counter.textContent =
+    questionCounter.textContent =
       questionInput.value.length + "/" + 50;
   // eslint-disable-next-line no-empty
   } else {
   }
 });
 
-questionInput?.addEventListener("input", () => {
-  if (questionInput.value.length <= 50) {
-    counter.textContent =
-      questionInput.value.length + "/" + 50;
+answerInput?.addEventListener("input", () => {
+  if (answerInput.value.length <= 100) {
+    answerCounter.textContent =
+      answerInput.value.length + "/" + 100;
   // eslint-disable-next-line no-empty
   } else {
   }
 });
+*/
