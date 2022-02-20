@@ -15,3 +15,7 @@
 textarea {
   resize: vertical;
 }
+
+h3.title {
+  text-align: center;
+}

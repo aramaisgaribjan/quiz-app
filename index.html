@@ -16,6 +16,7 @@
     <main>
       <header class="title">Quiz-App</header>
       <div class="box">
+        <h3 class="title">HOME</h3>
         <section class="home">
           <div data-js="btnArea" class="card">
             <div class="bookmark">
@@ -99,7 +100,44 @@
           </div>
         </section>
         <section class="bookmark"></section>
-        <section class="createPage"></section>
+        <section class="createPage">
+          <h3 class="title">CREATE</h3>
+          <div>
+            <form class="createQuestion">
+              <label for="addQuestion">Add question:</label>
+              <div data-js="textarea">
+                <textarea
+                  name="question-input"
+                  id="question-input"
+                  placeholder="Enter question..."
+                  rows="4"
+                  cols="34"
+                  required
+                  data-js="input-area"
+                  maxlength="100"
+                ></textarea>
+                <div><span data-js="input-counter">0/100</span></div>
+              </div>
+              <label for="addAnswer">Add answer:</label>
+              <div data-js="textarea">
+                <textarea
+                  id="answer-input"
+                  rows="4"
+                  cols="34"
+                  name="answer-input"
+                  placeholder="Enter answer..."
+                  required
+                  data-js="input-area"
+                  maxlength="100"
+                ></textarea>
+                <div><span data-js="input-counter">0/100</span></div>
+              </div>
+              <label for="addTag">Add tags:</label>
+              <input type="text" id="addTag" name="add tags" />
+              <input class="buttonSubmit" type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
         <section class="profile"></section>
       </div>
     </main>
