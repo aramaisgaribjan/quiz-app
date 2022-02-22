@@ -16,7 +16,7 @@ buttons.forEach(answer => {
 
 const inputs = document.querySelectorAll('[data-js="textarea"]');
 
-inputs?.forEach(item => {
+inputs.forEach(item => {
   const inputCounter = item.querySelector('[data-js="input-counter"]');
   const inputArea = item.querySelector('[data-js="input-area"]');
   inputArea.addEventListener('input', () => {
@@ -27,3 +27,25 @@ inputs?.forEach(item => {
     }
   });
 });
+
+const btnHome = document.querySelector('a[href="#index"]');
+const btnCreate = document.querySelector('a[href="#create"]');
+const createSection = document.querySelector('#create');
+const homeSection = document.querySelector('#index');
+
+btnCreate?.addEventListener('click', () => {
+  createSection.classList.remove('displayNone');
+  hideHomeSection();
+});
+
+btnHome?.addEventListener('click', () => {
+  homeSection.classList.remove('displayNone');
+  hideCreateSection();
+});
+
+function hideHomeSection() {
+  homeSection.classList.add('displayNone');
+}
+function hideCreateSection() {
+  createSection.classList.add('displayNone');
+}

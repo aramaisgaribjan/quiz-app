@@ -16,6 +16,11 @@ textarea {
   resize: vertical;
 }
 
+h3.homeTitle {
+  text-align: center;
+  margin-top: 0;
+}
+
 h3.title {
   text-align: center;
 }
