@@ -7,6 +7,14 @@
   position: relative;
 }
 
+.bookmark img {
+  position: absolute;
+  top: -0.9rem;
+  right: 0;
+  width: 35px;
+  height: 35px;
+}
+
 .tags {
   display: flex;
   justify-content: space-around;

@@ -27,19 +27,11 @@ header {
   overflow-y: auto;
 }
 
-.bookmark img {
-  position: absolute;
-  top: -0.9rem;
-  right: 0;
-  width: 35px;
-  height: 35px;
-}
-
 .content {
   margin-left: 10px;
 }
 
-footer {
+nav {
   display: flex;
   flex-direction: row;
   background-color: #96c7c1;
@@ -55,10 +47,14 @@ footer {
   border-bottom-right-radius: 20px;
 }
 
-footer a {
+nav a {
   color: rgb(0, 0, 0);
 }
 
 .material-icons {
   font-size: 35px !important;
+}
+
+.displayNone {
+  display: none;
 }
